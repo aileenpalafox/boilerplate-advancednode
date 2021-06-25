@@ -33,7 +33,7 @@ myDB(async (client) => {
   app.route('/').get((req, res) => {
     // Change the response to render the Pug template
     res.render('pug', {
-      title: 'Connected to Database',
+      title: 'You successfully connected to the database!',
       message: 'Please login',
       showLogin: true
     });
